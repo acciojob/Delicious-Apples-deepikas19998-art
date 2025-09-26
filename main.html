@@ -8,24 +8,30 @@
 </head>
 <body>
 
-  <div class="container">
+  <!-- MAIN CONTAINER MATCHING CYPRESS TESTS -->
+  <div class="product">
 
+    <!-- PHOTO SECTION -->
     <div class="product__photo">
       <div class="photo-container">
+
+        <!-- Main Apple Image -->
         <div class="photo-main">
-          <img src="https://res.cloudinary.com/john-mantas/image/upload/v1537302064/codepen/delicious-apples/green-apple2.png" alt="Green Apple Main Image">
+          <img src="green-apple-main.png" alt="Green Apple Main Image">
         </div>
 
+        <!-- Photo Album -->
         <div class="photo-album">
           <ul>
-            <li><img src="https://res.cloudinary.com/john-mantas/image/upload/v1537302064/codepen/delicious-apples/green-apple2.png" alt="Green Apple Side View"></li>
-            <li><img src="https://res.cloudinary.com/john-mantas/image/upload/v1537302064/codepen/delicious-apples/green-apple2.png" alt="Green Apple Close-up"></li>
-            <li><img src="https://res.cloudinary.com/john-mantas/image/upload/v1537302064/codepen/delicious-apples/green-apple2.png" alt="Green Apple on Tree"></li>
+            <li><img src="green-apple-1.png" alt="Green Apple View 1"></li>
+            <li><img src="green-apple-2.png" alt="Green Apple View 2"></li>
+            <li><img src="green-apple-3.png" alt="Green Apple View 3"></li>
           </ul>
         </div>
       </div>
     </div>
 
+    <!-- PRODUCT INFO SECTION -->
     <div class="product__info">
       <h1>Delicious Apples</h1>
       <span class="code">CODE: 46999</span>
@@ -34,16 +40,18 @@
         <h2>R$ <span>7.93</span></h2>
       </div>
 
+      <!-- COLOR VARIANTS (FIXED STRUCTURE) -->
       <div class="variant">
         <h3>Select a color</h3>
-        <div class="colors">
-          <img src="https://res.cloudinary.com/john-mantas/image/upload/v1537302064/codepen/delicious-apples/green-apple2.png" alt="Green Apple">
-          <img src="https://res.cloudinary.com/john-mantas/image/upload/v1537302752/codepen/delicious-apples/yellow-apple.png" alt="Yellow Apple">
-          <img src="https://res.cloudinary.com/john-mantas/image/upload/v1537302427/codepen/delicious-apples/orange-apple.png" alt="Orange Apple">
-          <img src="https://res.cloudinary.com/john-mantas/image/upload/v1537302285/codepen/delicious-apples/red-apple.png" alt="Red Apple">
-        </div>
+        <ul>
+          <li><img src="green-icon.png" alt="Green Apple Icon"></li>
+          <li><img src="yellow-icon.png" alt="Yellow Apple Icon"></li>
+          <li><img src="orange-icon.png" alt="Orange Apple Icon"></li>
+          <li><img src="red-icon.png" alt="Red Apple Icon"></li>
+        </ul>
       </div>
 
+      <!-- BENEFITS SECTION -->
       <div class="description">
         <h3>BENEFITS</h3>
         <ul>
@@ -54,6 +62,7 @@
         </ul>
       </div>
 
+      <!-- ADD TO CART (DISPLAY ONLY) -->
       <button class="add-to-cart">ADD TO CART</button>
     </div>
 
