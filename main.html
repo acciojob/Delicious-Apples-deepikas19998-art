@@ -1,182 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Apple Portfolio</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: linear-gradient(to right, #00c853, #aeea00);
-      margin: 0;
-      padding: 20px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .product {
-      display: flex;
-      background: #fff;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-      max-width: 900px;
-      overflow: hidden;
-    }
-
-    .product__photo {
-      flex: 1;
-      padding: 20px;
-    }
-
-    .photo-container {
-      text-align: center;
-    }
-
-    .photo-main img {
-      width: 250px;
-      border-radius: 10px;
-    }
-
-    .photo-album ul {
-      list-style: none;
-      padding: 0;
-      margin-top: 15px;
-      display: flex;
-      justify-content: center;
-      gap: 10px;
-    }
-
-    .photo-album li img {
-      width: 60px;
-      height: 60px;
-      border-radius: 8px;
-      cursor: pointer;
-      transition: transform 0.2s;
-    }
-
-    .photo-album li img:hover {
-      transform: scale(1.1);
-    }
-
-    .product__details {
-      flex: 1;
-      padding: 20px;
-    }
-
-    .product__details h1 {
-      margin: 0;
-      font-size: 22px;
-      color: #333;
-    }
-
-    .price {
-      font-size: 26px;
-      font-weight: bold;
-      color: #e53935;
-      margin: 15px 0;
-    }
-
-    .variant {
-      margin: 15px 0;
-    }
-
-    .variant h3 {
-      margin-bottom: 5px;
-      font-size: 16px;
-    }
-
-    .variant img {
-      width: 40px;
-      height: 40px;
-      border-radius: 50%;
-      margin-right: 10px;
-      cursor: pointer;
-      border: 2px solid transparent;
-      transition: border 0.3s;
-    }
-
-    .variant img:hover {
-      border: 2px solid #333;
-    }
-
-    .description {
-      margin: 20px 0;
-    }
-
-    .description h3 {
-      margin-bottom: 10px;
-      font-size: 18px;
-    }
-
-    .description ul {
-      padding-left: 20px;
-      color: #555;
-    }
-
-    .btn {
-      display: inline-block;
-      background: #e91e63;
-      color: #fff;
-      padding: 12px 25px;
-      text-align: center;
-      border-radius: 5px;
-      text-decoration: none;
-      font-weight: bold;
-      margin-top: 20px;
-    }
-
-    .btn:hover {
-      background: #ad1457;
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
 
-  <div class="product">
-    
-    <!-- Left Side: Photo Section -->
+  <div class="container">
+
     <div class="product__photo">
       <div class="photo-container">
         <div class="photo-main">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/1/15/Red_Apple.jpg" alt="Apple Main">
+          <img src="https://res.cloudinary.com/john-mantas/image/upload/v1537302064/codepen/delicious-apples/green-apple2.png" alt="Green Apple Main Image">
         </div>
+
         <div class="photo-album">
           <ul>
-            <li><img src="https://upload.wikimedia.org/wikipedia/commons/1/15/Red_Apple.jpg" alt="Red Apple"></li>
-            <li><img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Golden_Delicious.jpg" alt="Yellow Apple"></li>
-            <li><img src="https://upload.wikimedia.org/wikipedia/commons/1/13/Green_Apple.jpg" alt="Green Apple"></li>
-            <li><img src="https://upload.wikimedia.org/wikipedia/commons/3/36/Orange_Apple.jpg" alt="Orange Apple"></li>
+            <li><img src="https://res.cloudinary.com/john-mantas/image/upload/v1537302064/codepen/delicious-apples/green-apple2.png" alt="Green Apple Side View"></li>
+            <li><img src="https://res.cloudinary.com/john-mantas/image/upload/v1537302064/codepen/delicious-apples/green-apple2.png" alt="Green Apple Close-up"></li>
+            <li><img src="https://res.cloudinary.com/john-mantas/image/upload/v1537302064/codepen/delicious-apples/green-apple2.png" alt="Green Apple on Tree"></li>
           </ul>
         </div>
       </div>
     </div>
-    
-    <!-- Right Side: Details Section -->
-    <div class="product__details">
+
+    <div class="product__info">
       <h1>Delicious Apples</h1>
-      <p>Code: 4999</p>
-      <div class="price">$7.93</div>
+      <span class="code">CODE: 46999</span>
+
+      <div class="price">
+        <h2>R$ <span>7.93</span></h2>
+      </div>
 
       <div class="variant">
-        <h3>Select a Color</h3>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/1/13/Green_Apple.jpg" alt="Green Apple">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Golden_Delicious.jpg" alt="Yellow Apple">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/3/36/Orange_Apple.jpg" alt="Orange Apple">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/1/15/Red_Apple.jpg" alt="Red Apple">
+        <h3>Select a color</h3>
+        <div class="colors">
+          <img src="https://res.cloudinary.com/john-mantas/image/upload/v1537302064/codepen/delicious-apples/green-apple2.png" alt="Green Apple">
+          <img src="https://res.cloudinary.com/john-mantas/image/upload/v1537302752/codepen/delicious-apples/yellow-apple.png" alt="Yellow Apple">
+          <img src="https://res.cloudinary.com/john-mantas/image/upload/v1537302427/codepen/delicious-apples/orange-apple.png" alt="Orange Apple">
+          <img src="https://res.cloudinary.com/john-mantas/image/upload/v1537302285/codepen/delicious-apples/red-apple.png" alt="Red Apple">
+        </div>
       </div>
 
       <div class="description">
         <h3>BENEFITS</h3>
         <ul>
           <li>Apples are nutritious</li>
-          <li>May be good for weight loss</li>
-          <li>Good for bone health</li>
-          <li>Linked to lower risk of diabetes</li>
+          <li>Apples may be good for weight loss</li>
+          <li>Apples may be good for bone health</li>
+          <li>They're linked to a lower risk of diabetes</li>
         </ul>
       </div>
 
-      <a href="#" class="btn">ADD TO CART</a>
+      <button class="add-to-cart">ADD TO CART</button>
     </div>
 
   </div>
